@@ -29,7 +29,7 @@
                     et de MacGuffin dans l'univers du cinéma. Ses thrillers, caractérisés par une habile combinaison entre tension et humour, déclinent les variations de la figure de l'innocent persécuté à travers des thèmes récurrents : la peur, la culpabilité et la perte d'identité.
                 </p>
                 <video autoplay="true" loop  width="50%">
-                        <source src=""/>
+                        <source src="assets/txt/Lien_YT.txt"/>
                 </video>        
         </section>
         <section>
@@ -67,7 +67,7 @@
         <section>  
             <h2>Notre film coup de coeur</h2>
                 <video autoplay="true" loop  width="50%">
-                    <source src="assets/video/39_marches.mp4"/>
+                    <source src="https://www.youtube.com/embed/qtT6Nlm8rCg"/>
                 </video>
         </section>
         <section>
@@ -83,44 +83,74 @@
                 </tr>
                 <tr>
                     <td> Fenêtre sur cour :</td>
-                    <td> Titre original : </td>
-                    <td> Titre français : </td>
-                    <td> Réalisation : </td>
-                    <td> Scénario : </td>
-                    <td> Sociétés de production :</td>
+                    <td> Titre original : Rear Window </td>
+                    <td> Titre français : Fenêtre sur cour </td>
+                    <td> Réalisation : Alfred Hitchcock</td>
+                    <td> Scénario : John Michael Hayes</td>
+                    <td> Sociétés de production : Paramount Pictures et Patron Inc.</td>
                 </tr>
                 <tr>
-                    <td>  :</td>
-                    <td> Titre original : </td>
-                    <td> Titre français : </td>
-                    <td> Réalisation :</td>
-                    <td> Scénario : </td>
-                    <td> Sociétés de production : </td>
+                    <td> Sueurs froides :</td>
+                    <td> Titre original : Vertigo</td>
+                    <td> Titre français : Sueurs froides</td>
+                    <td> Réalisation : Alfred Hitchcock</td>
+                    <td> Scénario : Alec Coppel et Samuel Taylor</td>
+                    <td> Sociétés de production : Paramount Pictures et Alfred J. Hitchcock Productions, Inc.
+                    </td>
                 </tr>
                 <tr>
-                    <td>  :</td>
-                    <td> Titre original : </td>
-                    <td> Titre français : </td>
-                    <td> Réalisation : </td>
-                    <td> Scénario : </td>
-                    <td> Sociétés de production : </td>
+                    <td> La Mort aux trousses :</td>
+                    <td> Titre original : North by Northwest</td>
+                    <td> Titre français : La Mort aux trousses</td>
+                    <td> Réalisation : Alfred Hitchcock </td>
+                    <td> Scénario : Ernest Lehman</td>
+                    <td> Sociétés de production : Metro-Goldwyn-Mayer et Loew's Incorporated</td>
                 </tr>
                 <tr>
-                    <td>  :</td>
-                    <td> Titre original : </td>
-                    <td> Titre français :</td>
-                    <td> Réalisation :</td>
-                    <td> Scénario : </td>
-                    <td> Sociétés de production : </td>
+                    <td> Les Oiseaux :</td>
+                    <td> Titre original : The Birds</td>
+                    <td> Titre français : Les Oiseaux</td>
+                    <td> Réalisation : Alfred Hitchcock</td>
+                    <td> Scénario : Evan Hunter</td>
+                    <td> Sociétés de production : Universal Pictures et Shamley Productions</td>
                 </tr>
             </table>
+            <br><br>
         </section>
         <section>
-            <h2>Contactez nous</h2>
+            <h2>Contactez nous</h2>         
+                <form action="/action_page.php">
+                    <label for="fname">Nom:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="lname">Prénom:</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="fname">Entrez votre Email:</label><br>
+                    <input type="email" id="email" name="Email"><br><br>
+                    <p>Choissisez votre film préféré :</p>
+                    <input type="radio" id="psycho" name="fav_language">
+                    <label for="Psycho">Psycho</label><br>
+                    <input type="radio" id="fenetre" name="fav_language">
+                    <label for="fenetresur">Fenêtre sur cour</label><br>
+                    <input type="radio" id="sueurs froides" name="fav_language">
+                    <label for="Sueurs froides">Sueurs froides</label><br>
+                    <input type="radio" id="la Mort" name="fav_language">
+                    <label for="lamortaux">La Mort aux trousses</label><br>
+                    <input type="radio" id=" les Oiseaux" name="fav_language">
+                    <label for=" Les Oiseaux"> Les Oiseaux</label><br><br>
+                    <p>Choissisez le prochain film présenté sur le site :</p>                
+                    <select name="filmspres" id="pres">
+                      <option value="psycho">Psycho</option>
+                      <option value="fenêtre sur cour">Fenêtre sur cour</option>
+                      <option value="sueurs froides">Sueurs froides</option>
+                      <option value="la Mort aux trousses">La Mort aux trousses</option>
+                      <option value="les Oiseaux">Les Oiseaux</option>         
+                    </select><br><br><br>
+                    <label for="msg">Votre message:</label>
+                    <textarea id="msg" name="user_message"></textarea><br><br><br>          
+                    <input type="submit" value="Envoyer">
+                </form> 
         </section>
-
     </main>
-    
 </body>
 
 </html>
