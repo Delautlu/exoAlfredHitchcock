@@ -111,43 +111,53 @@
         </section>
         <section id="contact">
             <h2>Contactez nous</h2>         
-                <form action="/action_page.php">
-                    <label for="fname">Nom:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="lname">Prénom:</label><br>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <label for="fname">Entrez votre Email:</label><br>
-                    <input type="email" id="email" name="Email"><br><br>
-                    <p>Choissisez votre film préféré :</p>
-                    <input type="radio" id="psycho" name="fav_language">
-                    <label for="Psycho">Psycho</label><br>
-                    <input type="radio" id="fenetre" name="fav_language">
-                    <label for="fenetresur">Fenêtre sur cour</label><br>
-                    <input type="radio" id="sueurs froides" name="fav_language">
-                    <label for="Sueurs froides">Sueurs froides</label><br>
-                    <input type="radio" id="la Mort" name="fav_language">
-                    <label for="lamortaux">La Mort aux trousses</label><br>
-                    <input type="radio" id=" les Oiseaux" name="fav_language">
-                    <label for=" Les Oiseaux"> Les Oiseaux</label><br><br>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Identité</legend>
+                            <label for="fname">Nom:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="lname">Prénom:</label><br>
+                            <input type="text" id="lname" name="lname"><br>
+                    </fieldset>
+                    <fieldset>
+                            <legend>Email</legend>
+                            <label for="fname">Entrez votre Email:</label><br>
+                            <input type="email" id="email" name="Email"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Choissisez votre film préféré </legend>
+                            <input type="radio" id="psycho" name="fav_language">
+                            <label for="Psycho">Psycho</label><br>
+                            <input type="radio" id="fenetre" name="fav_language">
+                            <label for="fenetresur">Fenêtre sur cour</label><br>
+                            <input type="radio" id="sueurs froides" name="fav_language">
+                            <label for="Sueurs froides">Sueurs froides</label><br>
+                            <input type="radio" id="la Mort" name="fav_language">
+                            <label for="lamortaux">La Mort aux trousses</label><br>
+                            <input type="radio" id=" les Oiseaux" name="fav_language">
+                            <label for=" Les Oiseaux"> Les Oiseaux</label>
+                    </fieldset>
+                    <fieldset>              
+                        <legend>Choissisez le prochain film présenté sur le site </legend>                
+                            <select name="filmspres" id="pres">
+                                <option value="homme">L'Homme qui en savait trop</option>
+                                <option value="corde">La Corde</option>
+                                <option value="rebecca">Rebecca</option>
+                                <option value="cinquième">Cinquième Colonne</option>
+                                <option value="maison">La Maison du docteur Edwardes</option>        
+                                <option value="enchaînés">Les Enchaînés</option> 
+                                <option value="le crime">Le crime était presque parfait</option>   
+                                <option value="La Main">La Main au collet</option>   
+                                <option value="harry">Mais qui a tué Harry ?</option>   
+                            </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre message</legend>
+                        <textarea id="msg" name="user_message"></textarea><br>        
+                        <input type="submit" value="Envoyer"> 
+                    </fieldset>            
                 </form> 
-        </section>
-        <section>   
-                <p>Choissisez le prochain film présenté sur le site :</p>                
-                    <select name="filmspres" id="pres">
-                        <option value="homme">L'Homme qui en savait trop</option>
-                        <option value="corde">La Corde</option>
-                        <option value="rebecca">Rebecca</option>
-                        <option value="cinquième">Cinquième Colonne</option>
-                        <option value="maison">La Maison du docteur Edwardes</option>        
-                        <option value="enchaînés">Les Enchaînés</option> 
-                        <option value="le crime">Le crime était presque parfait</option>   
-                        <option value="La Main">La Main au collet</option>   
-                        <option value="harry">Mais qui a tué Harry ?</option>   
-                    </select><br><br><br>
-                    <label for="msg">Votre message:</label>
-                    <textarea id="msg" name="user_message"></textarea><br>        
-                    <input type="submit" value="Envoyer">             
-        </section>
+            </section>
     </main>
 </body>
 
